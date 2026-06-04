@@ -1,9 +1,19 @@
 /** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "firebasestorage.googleapis.com",
+        pathname: "/**",
+      },
+    ],
+  },
+  webpack(config) {
+    config.resolve.fallback = { fs: false };
+    return config;
+  },
+};
 
-export const reactStrictMode = false;
-export const webpack5 = true;
-export function webpack(config) {
-  config.resolve.fallback = { fs: false };
-
-  return config;
-}
+export default nextConfig;

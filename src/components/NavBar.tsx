@@ -7,11 +7,13 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaArrowLeft, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Logo from "/public/next.svg";
+import { Bio } from "@/data/constants";
 
 const contactData = {
-  linkedIn: "https://www.linkedin.com/in/khanhvinhnguyen/",
-  github: "https://github.com/khanhvinhnguyen",
-  email: "vinhnk.work@gmail.com",
+  linkedIn: Bio.linkedin,
+  github: Bio.github,
+  email: Bio.email,
+  resume: Bio.resume,
 };
 
 const NavBar = () => {
@@ -21,7 +23,7 @@ const NavBar = () => {
   const [linkColor, setLinkColor] = useState("#1f2937");
   const pathname = usePathname();
 
-  const { linkedIn, github, email } = contactData;
+  const { linkedIn, github, email, resume } = contactData;
 
   useEffect(() => {
     const handleNavBg = () => {
@@ -109,6 +111,11 @@ const NavBar = () => {
             <Link href="/#about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
+            <Link href="/#experience">
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                Experience
+              </li>
+            </Link>
             <Link href="/#skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
@@ -117,6 +124,14 @@ const NavBar = () => {
                 Projects
               </li>
             </Link>
+            <Link href="/#education">
+              <li className="ml-10 text-sm uppercase hover:border-b">
+                Education
+              </li>
+            </Link>
+            {/* <Link href={resume} target="_blank">
+              <li className="ml-10 text-sm uppercase hover:border-b">Resume</li>
+            </Link> */}
             <Link href="/#contact">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
@@ -171,6 +186,11 @@ const NavBar = () => {
                     About
                   </li>
                 </Link>
+                <Link href="/#experience">
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Experience
+                  </li>
+                </Link>
                 <Link href="/#skills">
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
                     Skills
@@ -181,6 +201,16 @@ const NavBar = () => {
                     Projects
                   </li>
                 </Link>
+                <Link href="/#education">
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Education
+                  </li>
+                </Link>
+                {/* <Link href={resume} target="_blank">
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    Resume
+                  </li>
+                </Link> */}
                 <Link href="/#contact">
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
                     Contact

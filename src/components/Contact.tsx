@@ -5,17 +5,9 @@ import { Input } from "antd";
 import contactImg from "/public/assets/images/contactImg.jpg";
 import ContactItems from "@/common/ContactItems";
 import { send } from "@/lib/sendMailAction";
-
-const mainData = {
-  name: "Nguyen Khanh Vinh",
-  job: "A Full-Stack Web Developer",
-  description:
-    "I am available for freelance or full-time positions. Contact me and let's talk.",
-};
+import { Bio } from "@/data/constants";
 
 const Contact = () => {
-  const { name, job, description } = mainData;
-
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] mx-auto px-2 py-28 w-full">
@@ -24,33 +16,32 @@ const Contact = () => {
         </p>
         <h2 className="py-4 capitalize">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
-          {/* Left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="h-full lg:p-4">
               <div>
                 <Image
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   src={contactImg}
-                  alt="/"
+                  alt="Contact"
                 />
               </div>
               <div>
-                <h2 className="py-2">{name}</h2>
-                <p>{job}</p>
-                <p className="p">{description}</p>
+                <h2 className="py-2">{Bio.name}</h2>
+                <p>{Bio.title}</p>
+                <p className="text-gray-600 py-2">
+                  {Bio.location} · Open to full-time and freelance opportunities.
+                </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Contact With Me</p>
+                <p className="uppercase pt-8">Connect</p>
                 <ContactItems />
               </div>
             </div>
           </div>
 
-          {/* Right */}
           <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form method="post">
-                {/* Name */}
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
@@ -62,7 +53,6 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  {/* Phone Number */}
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">
                       Phone number
@@ -72,11 +62,11 @@ const Contact = () => {
                       name="phoneNum"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       autoComplete="off"
+                      defaultValue={Bio.phone}
                     />
                   </div>
                 </div>
 
-                {/* Email */}
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <Input
@@ -87,7 +77,6 @@ const Contact = () => {
                     required
                   />
                 </div>
-                {/* Subject */}
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Subject</label>
                   <Input
@@ -98,34 +87,26 @@ const Contact = () => {
                     required
                   />
                 </div>
-                {/* Messenger */}
                 <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Messenger</label>
+                  <label className="uppercase text-sm py-2">Message</label>
                   <textarea
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows={10}
                     autoComplete="off"
                     name="message"
+                    required
                   ></textarea>
                 </div>
-                {/* Button */}
                 <button
-                  className="w-full p-4 test-gray-100 mt-4"
+                  className="w-full p-4 text-gray-100 mt-4"
                   formAction={send}
                 >
-                  Send Messenger
+                  Send Message
                 </button>
               </form>
             </div>
           </div>
         </div>
-        {/* <div className="flex justify-center py-12">
-          <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp size={30} className="text-[#5651e5" />
-            </div>
-          </Link>
-        </div> */}
       </div>
     </div>
   );

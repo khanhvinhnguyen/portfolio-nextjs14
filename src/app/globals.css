@@ -42,5 +42,9 @@ button {
 }
 
 .home-slider-introduce {
-  @apply w-screen h-[30vh] lg:h-[40vh] relative;
+  @apply w-full h-full relative;
+}
+
+.home-slider-introduce .swiper-slide {
+  @apply relative h-full;
 }

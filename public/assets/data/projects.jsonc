@@ -1,0 +1,131 @@
+{
+  "portflow": {
+    "title": "Portflow",
+    "bgImg": "/assets/images/projects/portflow_homepage.png",
+    "projURL": "/portflow",
+    "mainTech": "Next.js + NestJS + Redis",
+    "detail": {
+      "position": "Full-stack Developer",
+      "duration": "Jan 2025 – Jun 2025",
+      "technical": ["Next.js", "TypeScript", "Zustand", "NestJS", "Redis", "AWS S3", "Prisma"],
+      "linkTrial": "",
+      "linkCode": "",
+      "description": {
+        "overview": "Multi-tenant portfolio platform enabling users to create and publish professional portfolios through structured workflows, with draft-to-publish architecture and scalable cloud delivery.",
+        "responsibilities": [
+          "Designed draft-to-publish workflow with asset versioning for unpublished and public portfolio states.",
+          "Implemented autosave using Zustand, local storage persistence, and scheduled sync to AWS S3/R2.",
+          "Built media delivery with Presigned URLs for direct browser-to-cloud uploads without backend file proxying.",
+          "Implemented Redis-based metadata caching for portfolio routing, slug resolution, and access validation.",
+          "Architected the platform to support future subscription management and payment processing."
+        ]
+      }
+    },
+    "imgData": [
+      { "src": "/assets/images/projects/portflow_homepage.png", "alt": "Portflow Homepage" },
+      { "src": "/assets/images/projects/portflow_create.png", "alt": "Portflow Editor" }
+    ]
+  },
+  // "dieuThien": {
+  //   "title": "Dieu Thien Restaurant",
+  //   "bgImg": "https://firebasestorage.googleapis.com/v0/b/portfolio-35084.appspot.com/o/DieuThienBanner.jpg?alt=media&token=94a79ff9-a581-4990-8d6e-eeccf491c29c",
+  //   "projURL": "/dieuThien",
+  //   "mainTech": "Next.js + Ant Design",
+  //   "detail": {
+  //     "position": "Front-end Developer",
+  //     "duration": "Jun 2024",
+  //     "technical": ["Next.js", "Next-intl", "Ant Design", "Framer Motion", "Firebase", "TypeScript"],
+  //     "linkTrial": "https://amthucchaydieuthien.com/",
+  //     "linkCode": "",
+  //     "description": {
+  //       "overview": "Responsive vegetarian restaurant landing page with dynamic navigation, internationalization, and optimized performance.",
+  //       "responsibilities": [
+  //         "Built a responsive landing page with Next.js and Ant Design.",
+  //         "Implemented dynamic navigation, i18n, and form handling for customer interactions.",
+  //         "Optimized loading performance and UI components for user engagement."
+  //       ]
+  //     }
+  //   },
+  //   "imgData": [
+  //     {
+  //       "src": "https://firebasestorage.googleapis.com/v0/b/portfolio-35084.appspot.com/o/DieuThienBanner.jpg?alt=media&token=94a79ff9-a581-4990-8d6e-eeccf491c29c",
+  //       "alt": "Dieu Thien Restaurant"
+  //     }
+  //   ]
+  // },
+  "solarSystem": {
+    "title": "Solar System",
+    "bgImg": "/assets/images/projects/solarSystemMain2.png",
+    "projURL": "/solarSystem",
+    "mainTech": "React + Three.js + Vite",
+    "detail": {
+      "position": "Front-end Developer",
+      "duration": "May 2024",
+      "technical": ["React", "Vite", "Three.js", "Ant Design", "React-intl"],
+      "linkTrial": "https://solar-system-simple.vercel.app/",
+      "linkCode": "https://github.com/khanhvinhnguyen/Solar-system",
+      "description": {
+        "overview": "Interactive 3D web application visualizing celestial bodies in our solar system with real-time planetary motion and astronomical details.",
+        "responsibilities": [
+          "Built interactive 3D solar system visualization with React and Three.js.",
+          "Implemented planetary motion controls, celestial body details, and multi-language support.",
+          "Optimized 3D rendering performance and component structure for maintainability."
+        ]
+      }
+    },
+    "imgData": [
+      { "src": "/assets/images/projects/solarSystemMain2.png", "alt": "Solar System Screen" },
+      { "src": "/assets/images/projects/solarSystemDetail.png", "alt": "Solar System Detail" },
+      { "src": "/assets/images/projects/solarSystemStructure.png", "alt": "Solar System Structure" }
+    ]
+  },
+  "lixiSocial": {
+    "title": "Lixi Social",
+    "bgImg": "/assets/images/projects/lixiSocial.png",
+    "projURL": "/lixiSocial",
+    "mainTech": "Next.js + NestJS",
+    "detail": {
+      "position": "Full-Stack Developer",
+      "duration": "Aug 2021 – Sep 2023",
+      "technical": ["Next.js", "NestJS", "PostgreSQL", "Prisma", "Redis", "BullMQ"],
+      "linkTrial": "https://lixi.social/",
+      "linkCode": "https://github.com/bcProFoundation/lixilotus",
+      "description": {
+        "overview": "Web3 social platform on the Lotus (XPI) ecosystem with wallet integration, content delivery, and on-chain data synchronization.",
+        "responsibilities": [
+          "Developed core features for user management, content delivery, and wallet integration.",
+          "Built REST APIs with NestJS, PostgreSQL, and Prisma ORM.",
+          "Integrated BullMQ for notification handling and asynchronous task execution.",
+          "Implemented blockchain features including wallet interaction and transaction tracking."
+        ]
+      }
+    },
+    "imgData": [
+      { "src": "/assets/images/projects/lixiSocial.png", "alt": "Lixi Social Web" }
+    ]
+  },
+  // "abcPayWallet": {
+  //   "title": "AbcPay Wallet",
+  //   "bgImg": "/assets/images/projects/lixiSocial.png",
+  //   "projURL": "/abcPayWallet",
+  //   "mainTech": "Angular + Ionic",
+  //   "detail": {
+  //     "position": "Front-end Developer",
+  //     "duration": "Aug 2021 – Sep 2023",
+  //     "technical": ["Angular", "Ionic", "TypeScript"],
+  //     "linkTrial": "https://abcpay.cash/",
+  //     "linkCode": "",
+  //     "description": {
+  //       "overview": "Multi-currency cryptocurrency wallet supporting Lotus, eCash, BCH, DOGE, and LTC with multi-signature and secure transaction workflows.",
+  //       "responsibilities": [
+  //         "Developed cross-platform UI for mobile and desktop with Angular and Ionic.",
+  //         "Implemented donations, coin swapping, charts, and multi-language support.",
+  //         "Built multi-signature transaction workflows for secure wallet management."
+  //       ]
+  //     }
+  //   },
+  //   "imgData": [
+  //     { "src": "/assets/images/projects/lixiSocial.png", "alt": "AbcPay Wallet" }
+  //   ]
+  // }
+}

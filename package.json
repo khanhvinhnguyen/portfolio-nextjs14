@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3000",
+    "dev:clean": "rm -rf .next && next dev -p 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "devhost": "next dev -H 0.0.0.0",
-    "generate-projects": "node src/lib/generateProject.ts"
+    "validate-projects": "node src/lib/generateProject.ts"
   },
   "dependencies": {
     "antd": "^5.17.2",
+    "jsonc-parser": "^3.3.1",
     "lodash": "^4.17.21",
     "next": "14.2.3",
     "nodemailer": "^6.9.13",

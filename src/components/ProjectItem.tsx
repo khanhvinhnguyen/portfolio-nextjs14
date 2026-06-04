@@ -19,8 +19,8 @@ const ProjectItem = (props: ProjItemProps) => {
             className="group-hover:opacity-10 object-cover"
             src={bgImg}
             alt={title}
-            layout="fill"
-            objectFit="cover"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
         <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">

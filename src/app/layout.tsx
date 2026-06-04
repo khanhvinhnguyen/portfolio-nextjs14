@@ -7,13 +7,13 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Khanh Vinh Nguyen | Web Developer",
+  title: "Vinh Nguyen Khanh | Frontend Software Engineer",
   description:
-    "Experienced full-stack developer with 2 years in web development, specializing in intuitive interfaces and optimizing functionality. Proficient in front-end (ReactJS, NextJS) and back-end (NodeJS, NestJS) technologies. Continuously learning new tech and best practices.",
+    "Frontend-focused Software Engineer with 4+ years of experience building configuration-driven platforms, Runtime UI Systems, SDUI, and scalable React/Next.js architectures.",
   openGraph: {
-    title: "Khanh Vinh Nguyen | Web Developer",
+    title: "Vinh Nguyen Khanh | Frontend Software Engineer",
     description:
-      "Experienced full-stack developer with 2 years in web development, specializing in intuitive interfaces and optimizing functionality. Proficient in front-end (ReactJS, NextJS) and back-end (NodeJS, NestJS) technologies. Continuously learning new tech and best practices.",
+      "Frontend-focused Software Engineer with 4+ years of experience building configuration-driven platforms, Runtime UI Systems, SDUI, and scalable React/Next.js architectures.",
     url: "https://khanhvinhnguyen.id.vn/",
     siteName: "Khanh Vinh Nguyen | Web Developer",
     images: [

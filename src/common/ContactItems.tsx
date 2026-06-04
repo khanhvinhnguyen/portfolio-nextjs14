@@ -3,39 +3,47 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-
-const contactData = {
-  linkedIn: "https://www.linkedin.com/in/khanhvinhnguyen/",
-  github: "https://github.com/khanhvinhnguyen",
-  email: "vinhnk.work@gmail.com",
-};
+import { HiOutlineDocumentText } from "react-icons/hi";
+import { Bio } from "@/data/constants";
 
 const ContactItems = () => {
-  const { linkedIn, github, email } = contactData;
-
   return (
-    <div className="flex items-center justify-between m-auto py-4 max-w-[330px]">
+    <div className="flex items-center justify-center flex-wrap gap-4 m-auto py-4 max-w-[400px]">
       <Link
-        href={linkedIn}
+        href={Bio.linkedin}
+        target="_blank"
         className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+        aria-label="LinkedIn"
       >
         <FaLinkedinIn />
       </Link>
       <Link
-        href={github}
+        href={Bio.github}
+        target="_blank"
         className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+        aria-label="GitHub"
       >
         <FaGithub />
       </Link>
       <Link
-        href={`mailto:${email}`}
+        href={`mailto:${Bio.email}`}
         className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+        aria-label="Email"
       >
         <AiOutlineMail />
       </Link>
       <Link
+        href={Bio.resume}
+        target="_blank"
+        className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+        aria-label="Resume"
+      >
+        <HiOutlineDocumentText />
+      </Link>
+      <Link
         href="/#contact"
         className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300"
+        aria-label="Contact form"
       >
         <BsFillPersonLinesFill />
       </Link>
